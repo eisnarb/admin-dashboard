@@ -1,0 +1,64 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 300px 1fr;
+}
+
+.header {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  background-color:thistle;
+}
+
+.search {
+  max-height: 24px;
+}
+
+.notif {
+  height: 30px;
+  width: 30px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 50px;
+}
+
+.action-center {
+  background-color: tomato;
+  grid-column: span 2;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-row: span 2;
+}
+
+.content {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.trending, .announcements {
+  grid-column-start: 2;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 20px;
+  gap: 15px;
+  background-color: burlywood;
+}
+
+.card {
+  background-color: white;
+  height: 200px;
+}
