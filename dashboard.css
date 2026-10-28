@@ -156,6 +156,8 @@ button {
   box-shadow: 5px 10px 10px -10px rgba(0, 0, 0, 0.6);
   align-items: center;
   text-justify: left;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
 }
 
 .card > h2 {
@@ -165,12 +167,18 @@ button {
 .card > p {
   font-size: 1.25em;
   color: rgba(120, 120, 120, 0.9);
+  overflow: hidden;
 }
 
 .card:hover {
-  cursor: pointer;
   transform: translate(-2px, -2px);
   transition-duration: 0.2s; 
+}
+
+.card-act {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 2.5em;
 }
 
 /* Announcements */
